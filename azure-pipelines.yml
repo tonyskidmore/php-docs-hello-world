@@ -11,15 +11,13 @@ variables:
   # the name of your web app here is the same one you used above
   # when you created the web app using the Azure CLI
   appName: ajs-php-app-name
-
+  phpVersion: 7.2
+  
 trigger:
 - master
 
 pool:
   vmImage: 'ubuntu-latest'
-
-variables:
-  phpVersion: 7.2
 
 steps:
 - script: |
